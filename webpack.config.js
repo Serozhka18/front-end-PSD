@@ -1,5 +1,6 @@
 const path = require('path');
 
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -36,6 +37,7 @@ module.exports = {
                 test: /\.scss$/,
                 use:  [  'style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
+
             {
                 test: /\.scss$/,
                 use: [
@@ -50,12 +52,30 @@ module.exports = {
                             sourceMap: true
                         }
                     },
+
                 ]
             },
-        ]
-
+            {
+                test: /\.(jpg|png)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'dist/img/',
+                            publicPath: '../img/'
+                        }
+                    }
+                 ]
+            }
+         ]
     },
     plugins: [
+
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
         new CopyWebpackPlugin([
             {from:'src/img', to:'img'}
         ]),
