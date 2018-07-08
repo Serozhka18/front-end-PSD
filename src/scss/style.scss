@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.section-1{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 1920px){
+  .section-1{
+    background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
+    background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
+    background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
+    box-shadow: inset -1px -1.732px 5px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    width: 1920px;
+    height: 512px;
+    z-index: 4;
+    display: flex;
+    margin: 0 auto;
+
+    .wrapper{
+      width: 1170px;
+    }
+
+    header{
+      height: 45px;
+      width: 100%;
+      background: red;
+      background-color: rgb(219, 53, 52);
+      box-shadow: 0 5px 5px 0 rgba(16, 16, 15, 0.5);
+      position: relative;
+      left: 0;
+      top: 0;
+      z-index: 8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-content{
+      .wrapper{
+        .logo-content{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+
+
+          .entrance-sots-basket{
+            display: flex;
+            flex-basis: 205px;
+          }
+
+          .logo{
+            display: flex;
+            flex-basis: 205px;
+          }
+
+          .call-the-welder{
+            display: flex;
+            flex-basis: 200px;
+          }
+        }
+      }
+    }
+
+
+  }
+}
+@media screen and (max-width: 1210px){
+
+}
+@media screen and (max-width: 1100px){
+
+}
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 800px){
+
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 650px) {
+
+}
+@media screen and (max-width: 600px){
+
+}
+@media screen and (max-width: 500px){
+
+}
+@media screen and (max-width: 430px){
+
+}
+@media screen and (max-width: 400px){
+
+}
+
+/***************************************/
