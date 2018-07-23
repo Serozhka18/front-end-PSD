@@ -1,10 +1,24 @@
 /*import '../css/style.css';*/
 import 'jquery';
 import '../scss/style.scss';
-import '../scss/responsive.scss'
 
 
 console.log('hello world');
+
+$(document).ready(function ($) {
+   $('.tab_content').hide();
+   $('.tab_content:first').show();
+   $('.tabs:first').addClass('active');
+
+   $('.tabs  li').click(function (event) {
+       $('.tabs li').removeClass('active');
+       $(this).addClass('active');
+       $('.tab_content').hide();
+
+       let selectTab = $(this).find('a').attr('href');
+        $(selectTab).fadeIn();
+   })
+});
 
 $(document).ready(function () {
 
@@ -48,14 +62,9 @@ $(document).ready(function () {
         moveTo(i);
     });
 
-    $("#prev").click(function () {
-        moveTo('prev');
-    });
 
-    $("#next").click(function () {
-        moveTo('next');
-    });
 
     //initialize slider on load
     moveTo('next');
 });
+

@@ -16,20 +16,18 @@ body{
 
 
 @media screen and (max-width: 1920px){
-  .section-1{
+.section-1{
+    display: flex;
     position: relative;
+    z-index: 4;
+    width: 1920px;
+    height: 510px;
+    margin: 0 auto;
+    background-color: #ffe4ef;
     background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
     background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
     background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
-    box-shadow: inset -1px -1.732px 5px 0px rgba(0, 0, 0, 0.5);
-    /*position: absolute;*/
-    left: 0;
-    width: 1920px;
-    height: 512px;
-    z-index: 4;
-    display: flex;
-    margin: 0 auto;
-
+    background-image: url("../img/background.png");
     .wrapper{
       width: 1170px;
     }
@@ -61,28 +59,37 @@ body{
 
           .entrance-sots-basket{
             display: flex;
-            flex-basis: 205px;
+            height: 137px;
+            width: 200px;
             flex-direction: column;
             justify-content: center;
+            align-content: space-between;
 
+
+            a{
+              color: #ffffff;
+              text-decoration: none;
+            }
             .social-networks{
               display: flex;
               justify-content: space-between;
 
             }
 
+            .two-p{
+              font-size: 16px;
+              margin-bottom: 4px;
+              color: #b0baa4;
 
-            span{
+            }
+            p{
                 font-size: 18px;
                 font-family: "HelveticaNeue";
                 color: rgb(255, 255, 255);
                 line-height: 0.914;
-                text-align: left;
                 text-shadow: 0 1px 1px rgba(1, 1, 1, 0.5);
-                -moz-transform: matrix( 0.85448863604589,0,0,0.84660241728586,0,0);
-                -webkit-transform: matrix( 0.85448863604589,0,0,0.84660241728586,0,0);
-                -ms-transform: matrix( 0.85448863604589,0,0,0.84660241728586,0,0);
                 z-index: 69;
+
               }
 
             .basket-block{
@@ -104,6 +111,17 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                p:first-child{
+                    font-size: 25px;
+                    font-family: "HelveticaNeue";
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    line-height: 1.206;
+                    text-align: left;
+                    text-shadow: 0px 1px 1px rgba(1, 1, 1, 0.5);
+                    z-index: 64;
+                  opacity: 1;
+                }
 
               }
               p{
@@ -111,9 +129,6 @@ body{
                   font-family: "HelveticaNeue";
                   color: rgb(255, 228, 239);
                   line-height: 1.146;
-                  -moz-transform: matrix( 0.80786026200873,0,0,0.80429336806884,0,0);
-                  -webkit-transform: matrix( 0.80786026200873,0,0,0.80429336806884,0,0);
-                  -ms-transform: matrix( 0.80786026200873,0,0,0.80429336806884,0,0);
                   z-index: 58;
                     opacity: .8;
                 }
@@ -121,10 +136,6 @@ body{
             }
           }
 
-        }
-
-      }
-    }
 
           .logo{
             display: flex;
@@ -132,6 +143,7 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             height: 140px;
 
             span{
@@ -143,92 +155,101 @@ body{
               text-align: center;
               text-shadow: 0.5px 0.866px 1px rgba(255, 255, 255, 0.4);
             }
+            a{
+              text-decoration: none;
+            }
           }
-
 
           .call-the-welder{
             display: flex;
-            flex-basis: 200px;
+            height: 167px;
+            width: 200px;
+            position: relative;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-size: 19.495px;
             font-family: "HelveticaNeue";
             color: rgb(255, 255, 255);
             line-height: 1.539;
-            text-shadow: 0px 1px 1px rgba(1, 1, 1, 0.5);
-            -moz-transform: matrix( 0.92839035592013,0,0,0.92333684306844,0,0);
-            -webkit-transform: matrix( 0.92839035592013,0,0,0.92333684306844,0,0);
-            -ms-transform: matrix( 0.92839035592013,0,0,0.92333684306844,0,0);
 
-            .Call-of-the-welder{
+            .call-of-the-welder{
               display: flex;
               flex-direction: column;
-              align-items: center;
               justify-content: center;
-              width: inherit;
-              height: 66px;
-              border-radius: 3px;
+              color: white;
+              border-radius: 2px;
               background-image: -moz-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
               background-image: -webkit-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
               background-image: -ms-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
               box-shadow: 0px 2px 5px 0px rgba(1, 1, 1, 0.5),inset 0px 1px 1px 0px rgba(255, 255, 255, 0.29);
-              font-size: 46px;
-              font-family: "HelveticaNeue";
-              color: rgb(255, 255, 255);
-              font-weight: bold;
-              line-height: 0.656;
-              text-shadow: 0px 1px 1px rgba(1, 1, 1, 0.3);
-              -moz-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
-              -webkit-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
-              -ms-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
-            }
-          }
-        }
+              min-height: 66px;
+              z-index: 104;
+              padding: 7px 13px;
 
+              p{
+                  font-size: 26px;
+                  font-family: "HelveticaNeue";
+                  color: rgb(255, 255, 255);
+                  font-weight: bold;
+                  line-height: 0.9;
+                  text-align: center;
+                  text-shadow: 0px 1px 1px rgba(1, 1, 1, 0.3);
+                  -moz-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
+                  -webkit-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
+                  -ms-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
+                  z-index:57;
 
-  .section-1-footer{
-          .door{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 50px;
-
-            .item-door{
-              display: flex;
-              justify-content: center;
-              flex-direction: column;
-              align-items: center;
-              text-align: center;
-
-              text-transform: uppercase;
-              font-size: 15px;
-              font-family: "BebasNeueBold";
-              color: rgb(96, 139, 48);
-              line-height: 1.2;
-              text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
-              -moz-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
-              -webkit-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
-              -ms-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
-
-              span{
-                font-size: 40px;
               }
+
             }
           }
         }
+      }
+    }
 
+    .section-1-footer{
+      .door{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+
+        .item-door{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          text-transform: uppercase;
+          font-size: 15px;
+          font-family: "BebasNeueBold";
+          color: rgb(96, 139, 48);
+          line-height: 1.2;
+          text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+          -moz-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
+          -webkit-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
+          -ms-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
+
+          span{
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
 
 .section-2{
 
   height: 500px;
   position: relative;
-  margin-top: 75px;
+  padding-top: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 500px;
+  background-image: url("../img/bg-bg-section-3.png");
 
   .container {
     width:inherit;
@@ -275,7 +296,6 @@ body{
 
     #dots {
       list-style:none;
-      background: white;
       padding-bottom: 10px;
     }
 
@@ -301,49 +321,255 @@ body{
 
 }
 
-  .section-3{
+.section-3{
+    display: flex;
+    position: relative;
+  height: 940px;
+
+    justify-content: center;
+    background-image: url("../img/bg-bg-section-3.png");
 
     .wrapper{
       display: flex;
       flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 50px;
+
+      h1{
+        padding-bottom: 50px;
+          font-size: 48px;
+          font-family: "BebasNeueBold";
+          color: rgb(96, 139, 48);
+          line-height: 1.2;
+          text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+          z-index: 102;
+       }
+
 
       .section-3-4{
           display: flex;
           justify-content: space-between;
-        .left-side-bar{
-          width: 170px;
+          align-content: center;
+        .content-section-3{
+          background-image: url("../img/bg_con-section-3.png");
+          background-position: top ;
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          width: 756px;
+          height: 857px;
+          background-color: rgb(255, 255, 255);
+          background-size: cover;
+          margin: 0 30px;
+          border:  1px black solid;
+          box-shadow: 0px 4px 10px 0px rgba(1, 1, 1, 0.6);
+          border-width: 7px;
+          border-color: rgb(255, 255, 255);
+          border-style: solid;
+
+          .tab_container{
+            width: 763px;
+            display: flex;
+            justify-content: center;
+
+         }
+         .tab_content{
+           display: flex;
+           flex-direction: column;
+            align-items: center;
+
+
+           .item-text{
+             position: relative;
+               font-size: 18px;
+             font-family: "Myriad Pro";
+              padding: 20px;
+               max-width: 770px;
+               color: rgb(51, 51, 51);
+               line-height: 1.2;
+                text-indent: 20px;
+                z-index: 101;
+
+            }
+
+            /*.item-text:last-child{
+              padding-bottom: 0;
+            }*/
+          }
         }
 
-        .baner{
 
-          background-image: -moz-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
-          background-image: -webkit-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
-          background-image: -ms-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
-          box-shadow: 0px 2px 5px 0px rgba(1, 1, 1, 0.5),inset 0px 1px 1px 0px rgba(255, 255, 255, 0.29);
+        .left-side-bar{
           width: 170px;
-          height: 121px;
-          z-index: 109;
-          .p{
+
+          .tabs{
+
+            a{
+              font-size: 15px;
+              font-family: "HelveticaNeue";
+              color: rgb(0, 102, 0);
+              text-transform: uppercase;
+              line-height: 2;
+              text-align: left;
+              z-index: 99;
+              text-decoration: none;
+            }
+
+            li{
+              list-style: none;
+              padding-bottom: 20px;
+              }
+
+            }
+            li:last-child{
+              padding-bottom: 0;
+            }
+
+             li .active {
+              color: red;
+             }
+        }
+
+        .right-side-bar{
+          max-width: 170px;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          align-items: center;
+
+          .call-the-welder{
+              font-size: 19.495px;
+              font-family: "HelveticaNeue";
+              color: rgb(51, 51, 51);
+              line-height: 1.539;
+               text-align: center;
+              z-index: 106;
+
+            .span-text{
+              font-size: 19.495px;
+              font-family: "HelveticaNeue";
+              color: rgb(51, 51, 51);
+              line-height: 1.539;
+              text-align: center;
+              -moz-transform: matrix( 0.78982463115593,0,0,0.78365100284817,0,0);
+              -webkit-transform: matrix( 0.78982463115593,0,0,0.78365100284817,0,0);
+              -ms-transform: matrix( 0.78982463115593,0,0,0.78365100284817,0,0);
+              z-index: 116;
+            }
+
+            .call-of-the-welder{
+
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              color: white;
+              border-radius: 2px;
+              background-image: -moz-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
+              background-image: -webkit-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
+              background-image: -ms-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
+              box-shadow: 0px 2px 5px 0px rgba(1, 1, 1, 0.5),inset 0px 1px 1px 0px rgba(255, 255, 255, 0.29);
+              height: 56px;
+              z-index: 104;
+              margin-bottom: 60px;
+            }
+
+
+          }
+
+          .baner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            background-image: url("../img/ban.png");
+            height: 120px;
+            width: 178px;
             font-size: 24px;
             font-family: "BebasNeueBold";
             color: rgb(255, 255, 255);
             text-transform: uppercase;
             line-height: 0.888;
             text-align: center;
-            text-shadow: 0px 1px 2px rgba(16, 16, 15, 0.5);
-            -moz-transform: matrix( 1.75441314953215,0,0,1.75184330040458,0,0);
-            -webkit-transform: matrix( 1.75441314953215,0,0,1.75184330040458,0,0);
-            -ms-transform: matrix( 1.75441314953215,0,0,1.75184330040458,0,0);
+            text-shadow: 0 1px 2px rgba(16, 16, 15, 0.5);
             z-index: 111;
+            margin-bottom: 60px;
           }
+        }
+      }
+
+      z-index: 111;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    background-image: url("../img/bg_footer.png");
+    background-color: #fefcfb;
+   background-position: bottom;
+ /*   background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
+    background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
+    background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);*/
+    position: relative;
+
+    .foter-container{
+      display: flex;
+      justify-content: center;
+      margin-top: 250px;
+      background-image: url("../img/footer-bg.png");
+      background-repeat: no-repeat;
+      width: 1920px;
+      z-index: 120;
+      height: 45px;
+
+      .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        p{
+          font-size: 18px;
+          font-family: "HelveticaNeue";
+          color: rgb(255, 102, 102);
+          line-height: 0.95;
+          z-index: 127;
 
         }
       }
 
+      .footer-menu{
+        display: flex;
+
+        font-size: 18px;
+        font-family: "HelveticaNeue";
+        color: rgb(255, 255, 255);
+        line-height: 0.95;
+        z-index: 126;
+        li{
+          margin-right: 45px;
+        }
+
+        li:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    li{
+      list-style: none;
     }
   }
 
 }
+
+
+
+
 
 @media screen and (max-width: 1210px){
 

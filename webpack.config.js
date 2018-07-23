@@ -8,21 +8,15 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 
-module.exports = {
-    /*context: __dirname + "/src",*/ /*Пошук вхідних файлів буде здійснюватися із даної папки*/
 
-   /* devServer: {
-        host: 'localhost',
-        port: 8080,
-        contentBase: __dirname + '/dist'
-    },*/
-    devtool: "source-map",
+
+module.exports = {
     entry: {
         main: './src/js/app.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'app.[name].js'
+        filename: 'app.[name].js',
     },
     module: {
         rules: [
@@ -56,17 +50,16 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|png)$/,
-                use: [
+                test: /\.(png|jpg|gif)$/,
+                loaders: [
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name].[ext]',
-                            outputPath: 'dist/img/',
-                            publicPath: '../img/'
-                        }
-                    }
-                 ]
+                            name: '../img/[name].[ext]'
+                        },
+                    },
+                    'img-loader'
+                ]
             }
          ]
     },
@@ -76,6 +69,7 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
+
         new CopyWebpackPlugin([
             {from:'src/img', to:'img'}
         ]),
@@ -91,5 +85,8 @@ module.exports = {
         }),
 
         new CleanWebpackPlugin('dist', {} ),
-    ]
+
+    ],
 };
+
+
