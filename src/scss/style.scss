@@ -41,10 +41,118 @@ body{
       position: absolute;
       left: 0;
       top: 0;
-      z-index: 8;
       display: flex;
+      z-index: 8;
       justify-content: center;
       align-items: center;
+
+      .wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        .header-rigt-content{
+          min-width: 540px;
+          .right-content{
+            width: inherit;
+            display: flex;
+            justify-content: space-between;
+            figure{
+              display: flex;
+              align-items: center;
+
+              figcaption{
+                padding-left: 10px;
+                font-size: 12px;
+                font-family: "HelveticaNeue";
+                color: rgb(255, 255, 255);
+                line-height: 1.2;
+                top: 7.792px;
+                z-index: 25;
+              }
+
+            }
+            .lenght{
+              display: flex;
+              width: 70px;
+              justify-content: space-between;
+              .item-ua{
+                background-color: rgba(0, 0, 0, 0.302);
+                box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5),inset 0px 2px 5px 0px rgba(0, 0, 0, 0.004);
+                width: 30px;
+                height: 30px;
+                font-size: 18px;
+                font-family: "HelveticaNeue";
+                color: rgb(255, 63, 62);
+                line-height: 1.2;
+                text-align: center;
+                z-index: 20;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .item-ru{
+                background-color: rgba(0, 0, 0, 0.302);
+                box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5),inset 0px 2px 5px 0px rgba(0, 0, 0, 0.004);
+                width: 30px;
+                height: 30px;
+                font-size: 18px;
+                font-family: "HelveticaNeue";
+                color: rgb(255, 255, 255);
+                line-height: 1.2;
+                text-align: center;
+                z-index: 20;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+
+            }
+            .item-search{
+              form{
+                position: relative;
+              }
+
+              input{
+                background-color: rgba(0, 0, 0, 0.302);
+                box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5),inset 0px 2px 5px 0px rgba(0, 0, 0, 0.004);
+                width: 270px;
+                height: 30px;
+                z-index: 10;
+                padding: 12px 165px 4px 4px;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+              }
+              input:focus{
+                color: #ffffff;
+
+              }
+              input::placeholder{
+                font-size: 24px;
+                font-family: "HelveticaNeue";
+                color: rgb(255, 63, 62);
+                line-height: 1.2;
+                text-align: center;
+                z-index: 11;
+                overflow: visible;
+                vertical-align: top;
+                display: inline-block !important;
+              }
+              img{
+                position: absolute;
+                margin: 6px 0 0 230px;
+              }
+            }
+
+            input:focus::placeholder{
+              font-size: 14px;
+              transform: translateY(-50px);
+              transition: .5s;
+            }
+          }
+        }
+
+      }
     }
 
     .section-1-content{
@@ -84,12 +192,11 @@ body{
             }
             p{
                 font-size: 18px;
-                font-family: "HelveticaNeue";
-                color: rgb(255, 255, 255);
+              font-family:'HelveticaNeue','sans-serif';
+              color: rgb(255, 255, 255);
                 line-height: 0.914;
                 text-shadow: 0 1px 1px rgba(1, 1, 1, 0.5);
                 z-index: 69;
-
               }
 
             .basket-block{
@@ -113,7 +220,7 @@ body{
                 align-items: flex-start;
                 p:first-child{
                     font-size: 25px;
-                    font-family: "HelveticaNeue";
+                    font-family: "Helvetica Neue";
                     color: rgb(255, 255, 255);
                     font-weight: bold;
                     line-height: 1.206;
@@ -126,7 +233,7 @@ body{
               }
               p{
                   font-size: 15px;
-                  font-family: "HelveticaNeue";
+                  font-family: "Helvetica Neue";
                   color: rgb(255, 228, 239);
                   line-height: 1.146;
                   z-index: 58;
@@ -148,7 +255,7 @@ body{
 
             span{
               font-size: 48px;
-              font-family: "HelveticaNeue";
+              font-family: "Helvetica Neue";
               color: rgb(96, 139, 48);
               text-transform: uppercase;
               line-height: 1.2;
@@ -168,14 +275,22 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-family: "HelveticaNeue";
+            font-family: "Helvetica Neue";
             color: rgb(255, 255, 255);
             line-height: 1.539;
+
+            .text-white{
+              font-family: "Helvetica Neue Light";
+              font-size: 24px;
+              font-weight: bold;
+              color: white;
+            }
 
             .call-of-the-welder{
               display: flex;
               flex-direction: column;
               justify-content: center;
+              width: 170px;
               color: white;
               border-radius: 2px;
               background-image: -moz-linear-gradient( 90deg, rgb(176,39,39) 0%, rgb(222,54,53) 100%);
@@ -187,16 +302,16 @@ body{
               padding: 7px 13px;
 
               p{
-                  font-size: 26px;
-                  font-family: "HelveticaNeue";
+                  font-size: 24px;
+                  font-family: "Helvetica Neue";
                   color: rgb(255, 255, 255);
                   font-weight: bold;
-                  line-height: 0.9;
+                  line-height: 0.8;
                   text-align: center;
                   text-shadow: 0px 1px 1px rgba(1, 1, 1, 0.3);
-                  -moz-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
+                  /*-moz-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
                   -webkit-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
-                  -ms-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);
+                  -ms-transform: matrix( 0.75870795186231,0,0,0.79484284907906,0,0);*/
                   z-index:57;
 
               }
@@ -223,16 +338,19 @@ body{
 
           text-transform: uppercase;
           font-size: 15px;
-          font-family: "BebasNeueBold";
-          color: rgb(96, 139, 48);
+          font-family: "BebasNeueBold",'sans-serif';
+          font-weight: bold;
+          color: #527428;
           line-height: 1.2;
-          text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+          text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
           -moz-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
           -webkit-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
           -ms-transform: matrix( 0.88067588250017,0,0,0.87580684143126,0,0);
 
           span{
-            font-size: 40px;
+            font-size: 48px;
+            font-weight: bold;
+            font-family: "BebasNeueBold",'sans-serif';
           }
         }
       }
@@ -407,7 +525,7 @@ body{
 
             a{
               font-size: 15px;
-              font-family: "HelveticaNeue";
+              font-family: "Helvetica Neue";
               color: rgb(0, 102, 0);
               text-transform: uppercase;
               line-height: 2;
@@ -440,17 +558,18 @@ body{
 
           .call-the-welder{
               font-size: 19.495px;
-              font-family: "HelveticaNeue";
+              font-family: "Helvetica Neue";
               color: rgb(51, 51, 51);
               line-height: 1.539;
                text-align: center;
               z-index: 106;
 
             .span-text{
-              font-size: 19.495px;
-              font-family: "HelveticaNeue";
-              color: rgb(51, 51, 51);
-              line-height: 1.539;
+              font-size: 16px;
+              width: 100%;
+              font-family: "Helvetica Neue";
+              color: #808d9c;
+              line-height: 1.2;
               text-align: center;
               -moz-transform: matrix( 0.78982463115593,0,0,0.78365100284817,0,0);
               -webkit-transform: matrix( 0.78982463115593,0,0,0.78365100284817,0,0);
@@ -458,8 +577,14 @@ body{
               z-index: 116;
             }
 
-            .call-of-the-welder{
+            .text-black{
+              font-size: 20px;
+              color: black;
+              font-family: "Helvetica Neue";
+              font-weight: bold;
+            }
 
+            .call-of-the-welder{
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -472,6 +597,14 @@ body{
               height: 56px;
               z-index: 104;
               margin-bottom: 60px;
+              p{
+                  font-size: 26px;
+                  font-family: "Helvetica Neue";
+                  color: rgb(255, 255, 255);
+                  font-weight: bold;
+                  line-height: 0.8;
+
+              }
             }
 
 
@@ -485,16 +618,20 @@ body{
             background-image: url("../img/ban.png");
             height: 120px;
             width: 178px;
-            font-size: 24px;
-            font-family: "BebasNeueBold";
-            color: rgb(255, 255, 255);
+            font-size: 26px;
+
             text-transform: uppercase;
             line-height: 0.888;
             text-align: center;
             text-shadow: 0 1px 2px rgba(16, 16, 15, 0.5);
             z-index: 111;
             margin-bottom: 60px;
+            p{
+              font-family: "BebasNeueBold";
+              color: #ffffff;
+            }
           }
+
         }
       }
 
@@ -508,10 +645,7 @@ footer{
     height: 320px;
     background-image: url("../img/bg_footer.png");
     background-color: #fefcfb;
-   background-position: bottom;
- /*   background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
-    background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);
-    background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(177,235,118) 0%, rgb(75,121,31) 100%);*/
+     background-position: bottom;
     position: relative;
 
     .foter-container{
@@ -533,13 +667,13 @@ footer{
           color: #ffffff;
           text-decoration: none;
         }
-        p{
+
+        .footer-logo{
           font-size: 18px;
-          font-family: "HelveticaNeue";
+          font-family: "Helvetica Neue";
           color: rgb(255, 102, 102);
           line-height: 0.95;
           z-index: 127;
-
         }
       }
 
@@ -547,7 +681,7 @@ footer{
         display: flex;
 
         font-size: 18px;
-        font-family: "HelveticaNeue";
+        font-family: "Helvetica Neue";
         color: rgb(255, 255, 255);
         line-height: 0.95;
         z-index: 126;

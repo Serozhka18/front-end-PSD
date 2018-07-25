@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="fonts/Helvetica%20Neue/Helvetica%20Neue%20Condensed%20Black.ttf">
+    <link rel="stylesheet" href="fonts/Helvetica%20Neue/HelveticaNeueCyr-Light.otf">
+    <link rel="stylesheet" href="fonts/Helvetica%20Neue/HelveticaNeueCyr-Bold.otf">
+    <link rel="stylesheet" href="fonts/Bebas_Neue/BebasNeue%20Bold.otf">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +17,24 @@
         <header>
            <div class="wrapper">
                <img src="img/header-menu.png" alt="heade-menu">
-               <div class="header-rigt-content"></div>
+               <div class="header-rigt-content">
+                   <div class="right-content">
+                       <figure>
+                           <img src="../src/img/basket-block.png" alt="basket" height="28" width="32">
+                           <figcaption>Товаров: 3 <br>Сумма:5.000 грн.</figcaption>
+                       </figure>
+                       <div class="lenght">
+                           <div class="item-ru">ru</div>
+                           <div class="item-ua">ua</div>
+                       </div>
+                       <div class="item-search">
+                           <form>
+                               <span><img src="img/search.png"></span>
+                               <input type="search" id="site-search" name="q" placeholder="Поиск" >
+                           </form>
+                       </div>
+                   </div>
+               </div>
            </div>
         </header>
 
@@ -49,7 +70,7 @@
 
                     <div class="call-the-welder">
                         <span>Телефон горячей линии</span>
-                        <span>+12(034) 567 89 10</span>
+                        <span class="text-white">+12(034) 567 89 10</span>
                         <span>(пн.- пт. с 9.00 до 18)</span>
                         <div class="call-of-the-welder">
                             <p>ВЫЗВАТЬ</p>
@@ -95,7 +116,6 @@
 
 
     </div>
-
 
     <div class="section-2">
         <div class="wrapper">
@@ -257,7 +277,7 @@
                 <div class="right-side-bar">
                     <div class="call-the-welder">
                         <p class="span-text">Телефон горячей линии</p>
-                        <p class="span-text">+12(034) 567 89 10</p>
+                        <p class="span-text text-black">+12(034) 567 89 10</p>
                         <p class="span-text">(пн.- пт. с 9.00 до 18)</p>
                         <div class="call-of-the-welder">
                             <p>ВЫЗВАТЬ</p>
@@ -266,13 +286,13 @@
                     </div>
 
                     <div class="baner">
-                        <span>Банерная</span>
-                        <span> область</span>
+                        <p>Банерная</p>
+                        <p> область</p>
                     </div>
 
                     <div class="call-the-welder">
                         <p class="span-text">Телефон горячей линии</p>
-                        <p class="span-text">+12(034) 567 89 10</p>
+                        <p class="span-text text-black">+12(034) 567 89 10</p>
                         <p class="span-text">(пн.- пт. с 9.00 до 18)</p>
                         <div class="call-of-the-welder">
                             <p>ВЫЗВАТЬ</p>
@@ -293,7 +313,7 @@
 
                     <div class="foter-container">
                         <div class="wrapper">
-                        <p>Nakitel ©2014</p>
+                        <p><a href="#" class="footer-logo">Nakitel ©2014</a></p>
                         <ul class="footer-menu">
                             <li><a href="#">Контакты</a></li>
                             <li><a href="#">Акции</a></li>

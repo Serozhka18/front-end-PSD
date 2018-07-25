@@ -29,7 +29,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use:  [  'style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                use:  [  'style-loader', MiniCssExtractPlugin.loader, 'css-loader','sass-loader']
             },
 
             {
@@ -49,7 +49,7 @@ module.exports = {
 
                 ]
             },
-            {
+            /*{
                 test: /\.(png|jpg|gif)$/,
                 loaders: [
                     {
@@ -60,8 +60,16 @@ module.exports = {
                     },
                     'img-loader'
                 ]
-            }
-         ]
+            },*/
+            {
+                test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.ttf$/, /\.eot$/, /\.woff$/, /\.woff2$/],
+                loader: require.resolve('url-loader'),
+                options: {
+                    limit: 1000000000000,
+                    name: '../img/[name].[hash:8].[ext]',
+                },
+            },
+        ]
     },
     plugins: [
 
@@ -71,7 +79,8 @@ module.exports = {
         }),
 
         new CopyWebpackPlugin([
-            {from:'src/img', to:'img'}
+            {from:'src/img', to:'img'},
+            {from:'src/fonts', to:'fonts'}
         ]),
         new HtmlWebpackPlugin({
             inject: false,
@@ -85,6 +94,7 @@ module.exports = {
         }),
 
         new CleanWebpackPlugin('dist', {} ),
+
 
     ],
 };

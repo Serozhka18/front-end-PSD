@@ -2,7 +2,6 @@
 import 'jquery';
 import '../scss/style.scss';
 
-
 console.log('hello world');
 
 $(document).ready(function ($) {
